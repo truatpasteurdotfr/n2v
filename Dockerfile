@@ -9,7 +9,7 @@ RUN eval "$(/opt/conda/bin/conda shell.bash hook)" && \
 	conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1 \
 		ipykernel jupyterlab && \
 	python3 -m pip install --upgrade pip && \
-	python3 -m pip install tensorflow==2.8 && \
+	python3 -m pip install tensorflow==2.8 protobuf==3.20.1 && \
 	python3 -m pip install n2v
 
 	
